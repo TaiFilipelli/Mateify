@@ -1,0 +1,20 @@
+<nav class="w-full bg-transparent flex justify-between items-center p-6">
+    <a href="/" class="dark:bg-[#4F772D] bg-[#31572C] rounded-full p-2"><img src="/mate.png" alt="Logo Mateify" class="w-16 invert"></a>
+    <div class="w-1/4 flex justify-evenly text-white text-lg font-semibold">
+        <a [routerLink]="['/about']" class="p-2 max-w-30 bg-[#31572C] hover:bg-[#5a7955] dark:bg-[#4F772D] transition-colors ease-linear rounded-xl px-6">
+            <fa-icon [icon]="faInfo" class="pr-3"></fa-icon>
+            About
+        </a>
+        <a [routerLink]="['/login']" class="p-2 max-w-30 bg-[#31572C] hover:bg-[#5a7955] dark:bg-[#4F772D] transition-colors ease-linear rounded-xl px-6">
+            <fa-icon [icon]="faArrowRightToBracket" class="pr-3"></fa-icon>
+            Log in
+        </a>
+        <button (click)="toggleTheme()" class="bg-[#31572C] dark:bg-[#4F772D] p-2 rounded-full w-14">
+            @if(theme=='light'){
+                <fa-icon [icon]="faSun"></fa-icon>
+            }@else {
+                <fa-icon [icon]="faMoon"></fa-icon>
+            }
+        </button>
+    </div>
+</nav>

@@ -1,5 +1,5 @@
 # Mateify: Dashboard de gestión de pagos💸
-## App web con la posibilidad de gestionar tus pagos, administrar tus ingresos y representar gráficamente (gracias a ![uishadcn/charts](https://ui.shadcn.com/charts#charts)) tus gastos a lo largo del mes. Este README se actualizará el dia de mañana con una lista de todas las futuras features.
+## App web con la posibilidad de gestionar tus pagos, administrar tus ingresos y representar gráficamente (gracias a uishadcn/charts) tus gastos a lo largo del mes. Este README se actualizará el dia de mañana con una lista de todas las futuras features.
 
 ## Tecnologias usadas: Angular y TailwindCSS
 

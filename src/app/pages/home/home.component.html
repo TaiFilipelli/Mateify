@@ -7,8 +7,17 @@
             <a href="/about" class="text-base text-white font-medium p-4 bg-[#31572C] rounded-2xl">Conocenos!</a>
         </div>
     </section>
-    <section class="h-[70vh] bg-black text-white text-left flex flex-col justify-center p-16">
-        <h1 class="text-4xl font-robtop-black py-6">Organizá tus costos de la forma más cómoda.</h1>
-        <h2 class="text-2xl font-robtop-bold pb-4">hola esto es prueba</h2>
+    @defer (on viewport) {
+        <section class="h-[80vh] bg-[url('/finance_bg.jpg')] bg-cover bg-center text-black text-center flex flex-col justify-center p-16">
+            <h1 class="text-4xl font-robtop-black">Organizá tus costos de forma profesional</h1>
+            <h2 class="text-2xl font-robtop-bold pt-4">Con Mateify, nunca fue tan fácil administrar tus gastos</h2>
+        </section>
+    }@placeholder {
+        <div class="w-full flex text-center">
+            <h1 class="text-2xl font-bold">Loading content...</h1>
+        </div>
+    }
+    <section>
+        
     </section>
 </header>

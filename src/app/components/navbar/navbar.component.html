@@ -1,15 +1,15 @@
-<nav class="w-full bg-transparent flex justify-between items-center p-6 h-[20vh]">
-    <a href="/" class="dark:bg-[#4F772D] bg-[#31572C] rounded-full p-2"><img src="/mate.png" alt="Logo Mateify" class="w-16 invert"></a>
+<nav class="w-full bg-transparent flex justify-between items-center px-6 h-[20vh]">
+    <a href="/" class="bg-[#14213D] dark:bg-[#FCA311] rounded-full p-2"><img src="/mate.png" alt="Logo Mateify" class="dark:invert-0 invert w-16"></a>
     <div class="w-1/4 flex justify-evenly text-white text-lg font-semibold">
-        <a [routerLink]="['/about']" class="p-2 max-w-30 bg-[#31572C] hover:bg-[#5a7955] dark:bg-[#4F772D] transition-colors ease-linear rounded-xl px-6">
+        <a [routerLink]="['/about']" class="p-2 max-w-30 bg-[#14213D] hover:bg-[#FCA311] dark:bg-[#FCA311] dark:hover:bg-[#14213D] transition-colors ease-linear rounded-xl px-6">
             <fa-icon [icon]="faInfo" class="pr-3"></fa-icon>
-            About
+            Nosotros
         </a>
-        <a [routerLink]="['/login']" class="p-2 max-w-30 bg-[#31572C] hover:bg-[#5a7955] dark:bg-[#4F772D] transition-colors ease-linear rounded-xl px-6">
-            <fa-icon [icon]="faArrowRightToBracket" class="pr-3"></fa-icon>
-            Log in
+        <a [routerLink]="['/movies']" class="p-2 max-w-30 bg-[#14213D] hover:bg-[#FCA311] dark:bg-[#FCA311] dark:hover:bg-[#14213D] transition-colors ease-linear rounded-xl px-6">
+            <fa-icon [icon]="faClapperboard" class="pr-3"></fa-icon>
+            Ver peliculas
         </a>
-        <button (click)="toggleTheme()" class="bg-[#31572C] dark:bg-[#4F772D] p-2 rounded-full w-14">
+        <button (click)="toggleTheme()" class="bg-[#14213D] dark:bg-[#FCA311] transition-colors  ease-linear p-2 rounded-full w-14">
             @if(theme=='light'){
                 <fa-icon [icon]="faSun"></fa-icon>
             }@else {

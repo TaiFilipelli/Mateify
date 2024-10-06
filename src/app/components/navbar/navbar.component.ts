@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
-import { faArrowRightToBracket, faInfo, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faClapperboard, faInfo, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { ThemeService } from '../../services/theme.services';
 
 @Component({
@@ -29,7 +29,7 @@ export class NavbarComponent {
     this.theme = isDarkMode ? 'light' : 'dark';
   }
 
-  faArrowRightToBracket = faArrowRightToBracket;
+  faClapperboard = faClapperboard;
   faInfo = faInfo;
   faMoon = faMoon;
   faSun = faSun

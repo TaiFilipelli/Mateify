@@ -4,13 +4,17 @@
         <h2 class="text-2xl font-mont-md">Los expertos opinando de tus peliculas favoritas.</h2>
         <div class="flex flex-row items-center justify-center gap-8 mt-16">
             <a href="/movies" class="text-2xl text-white font-robtop-bold p-5 bg-[#FCA311] hover:bg-[#d29739] border-2 border-[#14213D] rounded-2xl transition-colors duration-300">Ver peliculas</a>
-            <a href="/about" class="text-base text-black font-medium p-4 bg-white border-2 border-[#14213D] rounded-2xl">Conocenos!</a>
         </div>
     </section>
     @defer (on viewport) {
         <section class="h-[80vh] bg-black text-white text-center flex flex-col justify-center p-16">
             <h1 class="text-4xl font-robtop-black">Hola! 👋</h1>
             <h2 class="text-2xl font-robtop-bold pt-4">Ahorrate la plata de los tickets verificando que la peli sea buena o una basura!</h2>
+            <div class="w-full flex flex-wrap justify-center gap-4">
+                @for (movie of movies; track $index) {
+                    <app-movie-card [movie]="movie"></app-movie-card>
+                }
+            </div>
         </section>
     }@placeholder {
         <div class="w-full flex text-center">

@@ -19,7 +19,7 @@ export class HomeComponent {
     ngOnInit() {
       this.moviesService.getMovies().subscribe({
         next: (response) => {
-          this.movies = response.results;  // Aquí obtendrás las películas
+          this.movies = response.results;
           console.log(this.movies);
         },
         error: (err) => console.error(err)

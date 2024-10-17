@@ -1,0 +1,15 @@
+.bento{
+    flex: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    h2{
+        font-family: PoppinsBold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+}

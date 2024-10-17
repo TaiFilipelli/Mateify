@@ -6,6 +6,10 @@
     src: url('./assets/fonts/poppins/Poppins-Bold.ttf');
 }
 @font-face {
+    font-family: PoppinsSB;
+    src: url('./assets/fonts/poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
     font-family: Afacad;
     src: url('./assets/fonts/afacad/Afacad-VariableFont_wght.ttf');
 }

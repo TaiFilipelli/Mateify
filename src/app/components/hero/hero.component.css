@@ -3,15 +3,49 @@ header{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    h1{
-        font-size: 65px;
-        font-family: PoppinsBold;
-        color: #3C096C;
-        margin-top: 20px;
-    }
+    align-items: center;
     p{
         font-size: 25px;
         font-family: Afacad;
+    }
+}
+.hero{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+    h1{
+        font-size: 60px;
+        font-family: PoppinsBold;
+        margin-top: 20px;
+        position: relative;
+        width: max-content;
+    }
+    h1::after{
+        content: "";
+        background: linear-gradient(to right, #240046 25%, #5A189A 50%, #FF8500 75%, #FF9E00 100%);
+        height: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+p{
+    width: 50%;
+    animation: fadeP 1s ease-out;
+}
+@keyframes fadeP {
+    from{
+        opacity: 0.1;
+        scale: 0.90;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
     }
 }

@@ -2,6 +2,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 div{
     display: flex;
@@ -11,5 +12,10 @@ div{
         color: black;
         text-decoration: none;
         font-family: PoppinsSB;
+    }
+    a:hover{
+        color: #9D4EDD;
+        transition: color, scale 0.4s, 0.3s ease-out;
+        scale: 1.1;
     }
 }

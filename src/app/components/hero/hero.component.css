@@ -1,12 +1,14 @@
-.hero{
+header{
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
     h1{
-        font-size: 60px;
+        font-size: 65px;
         font-family: PoppinsBold;
+        color: #3C096C;
+        margin-top: 20px;
     }
     p{
         font-size: 25px;

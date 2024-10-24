@@ -1,0 +1,62 @@
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+header{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    h1{
+        font-size: 50px;
+        font-family: PoppinsBold;
+        text-shadow: #e9e9e9 2px 2px;
+        span{
+            position: relative;
+            width: max-content;
+        }
+        span::after{
+            content: "";
+            background: linear-gradient(to right, #240046 25%, #5A189A 50%, #FF8500 75%, #FF9E00 100%);
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    h3{
+        font-size: 25px;
+        font-family: PoppinsSB;
+    }
+}
+.gallery{
+    background-color: #131721;
+}
+article{
+    height: 60dvh;
+    display: flex;
+    flex-direction: row;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        text-align: left;
+        gap: 20px;
+        color: white;
+        h1{
+            font-size: 50px;
+            font-family: PoppinsBold;
+        }
+        p{
+            font-size: 25px;
+            font-family: Afacad;
+            text-wrap: balance;
+        }
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
